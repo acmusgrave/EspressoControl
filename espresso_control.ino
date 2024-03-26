@@ -120,12 +120,6 @@ void loop() {
 
   time_ms = millis();
 
-  //desired functionality: Bias control variable on for 5s on start of brew cycle, bias off for 10s at after end of brew cycle
-  //if switched back off during the first 5 seconds? Still bias off for 10 more seconds?
-  //should it be cycles rather than seconds? Fixed time could bias for a different number of cycles depending on the phase shift
-  //But does it matter? Idea is just to give it advanced warning, if it's biased a bit too long the measured temperature should catch up and it would be on (or off) anyways
-
-
   int event = left_button.poll();
 
 //  if (event != NONE){
